@@ -1,6 +1,6 @@
 # itu-fe-css-curly-octo-winner
 
-[https://itu-fe-css-curly-octo-winner.vercel.app/]Demo
+[Demo](https://itu-fe-css-curly-octo-winner.vercel.app/)
 
 ## Instructions
 
