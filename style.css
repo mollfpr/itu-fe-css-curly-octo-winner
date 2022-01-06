@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.box {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Defining grid area for the boxes */
+.box--one {
+  grid-area: box-one;
+  background-color: #2d88d9;
+}
+.box--two {
+  grid-area: box-two;
+  background-color: #d3445b;
+}
+.box--three {
+  grid-area: box-three;
+  background-color: #897a5e;
+}
+.box--four {
+  grid-area: box-four;
+  background-color: #ac6363;
+}
+.box--five {
+  grid-area: box-five;
+  background-color: #720fc3;
+}
+.box--six {
+  grid-area: box-six;
+  background-color: #1bad9f;
+}
+.box--seven {
+  grid-area: box-seven;
+  background-color: #217868;
+}
+.box--eight {
+  grid-area: box-eight;
+  background-color: #6557f5;
+}
+.box--nine {
+  grid-area: box-nine;
+  background-color: #4b5c6b;
+}
+
+.container {
+  height: calc(100vh - 20px); /* remove padding from body */
+  display: grid;
+  grid-template-areas:
+    "box-one box-one"
+    "box-three box-four"
+    "box-two box-two"
+    "box-seven box-seven"
+    "box-five box-eight"
+    "box-six box-nine";
+  grid-gap: 10px;
+}
+
+/* screen larger than 600px */
+@media only screen and (min-width: 601px) {
+  .container {
+    grid-template-areas:
+      "box-one box-one box-two box-two"
+      "box-one box-one box-three box-four"
+      "box-five box-seven box-seven box-eight"
+      "box-six box-seven box-seven box-eight"
+      "box-six box-seven box-seven box-nine";
+  }
+}
